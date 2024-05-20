@@ -9,17 +9,18 @@ public class App {
         JFrame frame = new JFrame();
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         
-        Bola ball = new Bola();
         
-        frame.add(ball);
+
+
+        frame.add(l);
+
         frame.setVisible(true);
         frame.setSize(800, 800);
 
-        Timer timer = new Timer(20, new ActionListener() {
+        Timer timer = new Timer(25, new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent arg0) {
-                ball.physihi();
-                ball.repaint();
+                l.repaint();
             }   
         });
 
